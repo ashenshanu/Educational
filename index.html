@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta description -->
+    <meta name="description" content="Nenasa - Sri Lanka's Premier Free Distance Education Ecosystem">
+    <meta name="author" content="Ceyentra Technologies">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="Nenasa - Sri Lanka's Premier Free Distance Education Ecosystem"> <!-- website name -->
+    <meta property="og:site" content="https://nenasa.lk/"> <!-- website link -->
+    <meta property="og:title" content="Nenasa - Sri Lanka's Premier Free Distance Education Ecosystem"> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Sri Lanka's Premier Free Distance Education Ecosystem"> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="images/ministry-of-education-sri-lanka-nenasa-1.jpg"> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://nenasa.lk"> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="website">
+
+    <!--title-->
+    <title>Nenasa - Sri Lanka's Premier Free Distance Education Ecosystem</title>
+
+    <!--favicon icon-->
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&amp;display=swap" rel="stylesheet">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Magnific popup css-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!--Themify icon css-->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!--animated css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <script>
+        var language;
+
+        function getLanguage() {
+            (localStorage.getItem('locals') == null) ? setLanguage('en') : false;
+            $.ajax({url:  '/language/' +  localStorage.getItem('locals') + '.json',
+                dataType: 'json', async: false,
+                success: function (lang) { language = lang } });
+        }
+        async function setLanguage(lang) {
+            await localStorage.setItem('locals', lang);
+            getLanguage();
+            setValues();
+            if (lang === 'en'){
+                $('#collaborationHolder').show()
+                $('#collaborationHolder2').hide()
+            } else {
+                $('#collaborationHolder').hide()
+                $('#collaborationHolder2').show()
+            }
+        }
+
+        function setImages(type) {
+            setModalImages()
+        }
+
+        window.onload = function() {
+            console.log('called')
+            $('#collaborationHolder2').hide()
+        };
+
+    </script>
+    <script src="js/setLocal.js"></script>
+    <script src="js/setImages.js"></script>
+
+    <link type="”text/css”" rel="”stylesheet”" href="”https://www.google.com/calendar/969ff39784188d8d017a0c60c8f2558aembedcompiled_fastui.css”">
+    <script type="”text/javascript”" src="969ff39784188d8d017a0c60c8f2558aembedcompiled__en_gb.js%E2%80%9D"></script>
+</head>
+<body>
+
+<!--body content wrap start-->
+<div class="main">
+
+    <!--hero section start-->
+    <section class="hero-section background-img" style="background: url('images/app-hero-bg.jpg')no-repeat center center / cover" >
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-5 pb fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-5 col-lg-5">
+                    <div class="hero-content-left text-white">
+                        <img src="images/logo.png" class="img-fluid m-2 nenasa-logo " alt="dialog">
+                        <h1 id="headerTitle" class="text-white font-weight-bold ">Sri Lanka's Premier Free Distance Education Ecosystem</h1>
+
+                        <div class="languageHolder ">
+                            <a class="text-white languageSelector" onclick="setLanguage('en')">English &nbsp;&nbsp;</a>
+                            <a class="text-white languageSelector" onclick="setLanguage('si')">සිංහල &nbsp;&nbsp;</a>
+                            <a class="text-white languageSelector" onclick="setLanguage('tm')">தமிழ்</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7">
+                    <div class="hero-animation-img " >
+                        <img src="images/header.png" alt="app" class="img-fluid" style="margin-top: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-img-absolute">
+            <img src="images/hero-bg-shape-1.svg" alt="wave shape" class="img-fluid">
+        </div>
+    </section>
+    <!--hero section end-->
+
+    <!--promo section start-->
+    <section class="promo-section ptb-100 fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div id="collaborationHolder" class="row justify-content-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="section-heading text-center mb-4 " >
+                        <h2 id="collaboration">A Collaboration Between</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brandHolder pt-3 " >
+                <img class="brandImg3" src="images/smer.png" alt="Ministry of logo">
+            </div>
+            <div class="brandHolder pt-3 " >
+                <img class="brandImg2" src="images/dialog.png" alt="dialog">
+                <img class="brandImg2" src="images/dialogf.png" alt="dialog">
+            </div>
+
+            <div class="row equal brandHolderWeb mt-1 " >
+                <div class="col-6 mt-3">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg  h-100">
+                        <div class="circle-icon">
+                            <img class="padding10 brandImg" src="images/smer.png" alt="Ministry of logo">
+                        </div>
+<!--                        <h5 id="ministry">Ministry of Education<br> Sri Lanka</h5>-->
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 mt-3">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg  h-100">
+                        <div class="circle-icon">
+                            <img class="padding10 brandImg" src="images/dialog2.png" alt="dialog">
+                        </div>
+<!--                        <h5 id="dialog">Dialog Axiata PLC</h5>-->
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 mt-3">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg  h-100">
+                        <div class="circle-icon">
+                            <img class="padding10 brandImg" src="images/dialogf2.png" alt="dialog">
+                        </div>
+<!--                        <h5 id="dialogF">Dialog Foundation</h5>-->
+                    </div>
+                </div>
+            </div>
+
+            <div id="collaborationHolder2" class="row justify-content-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="section-heading text-center mb-4">
+                        <h2 id="subTitleColab"></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-100 fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-12">
+                    <div class="section-heading text-center mt-4 " >
+
+                        <h2 id="liveLessonCalendar">Live Lesson Calendar</h2>
+                        <div class="row justify-content-center">
+                            <table id="timetable">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Timetable rows will be populated here by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--promo section end-->
+
+    <!--overflow block start-->
+    <div class="overflow-hidden displayNone">
+        <!--about us section start-->
+        <section id="guruGedara" class="about-us ptb-100 background-shape-img fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-7">
+                        <div class="about-content-left section-heading">
+                            <div class="languageHolder " >
+                                <h2 class="centerItem"><span id="freeDownload">Free Download</span> <span class="guruGedara">.=ref.or</span></h2>
+                            </div>
+
+                            <div class="single-feature mb-4 mt-5 " >
+                                <div class="icon-box-wrap d-flex align-items-center mb-2">
+                                    <div class="mr-3 icon-box">
+                                        <img src="images/building.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p id="videoLessons" class="mb-0">Video Lessons produced by the National Institute of Education</p>
+                                </div>
+                            </div>
+                            <div class="single-feature mb-4 " >
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="mr-3 icon-box">
+                                        <img src="images/grade.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p id="suitable" class="mb-0">Suitable for students from grade 3 to grade 13.</p>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="single-feature mb-4 " >
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="mr-3 icon-box">
+                                        <img src="images/download.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p id="totallyFree" class="mb-0">Totally FREE for downloads</p>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="single-feature mb-4 " >
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="mr-3 icon-box">
+                                        <img src="images/video.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p id="noData" class="mb-0">NO DATA CHARGES for Dialog Mobile and Home Broadband subscribers</p>
+                                </div>
+                                <p></p>
+                            </div>
+
+                            <div class="download-btn centerBtn " >
+                                <a id="visit" href="./nenasa-videos/nenasa-files.php" class="btn google-play-btn mt-5">Visit the Download Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="about-content-right centerItem " >
+                            <img src="images/guguGedaraBanner.png" alt="about us" class="img-fluid aboutImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about us section end-->
+    </div>
+    <!--overflow block end-->
+
+
+    <!--feature section start-->
+    <section id="nenasa-Tv" class="feature-section ptb-100 fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4">
+                    <div class="download-img centerItem " >
+                        <img src="images/nenasaTvBanner.png" alt="download" class="img-fluid aboutImg">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="feature-contents section-heading centerItem">
+                        <img src="images/nTv.png" class="featureIcon nTvLogo">
+
+                        <div style="display: flex;flex-direction: row" class="  nenasaTVTitle" >
+                            <h2 id="nenasaTv" class=" centerItem" style="width: fit-content;">Nenasa </h2>
+                            <h2>&nbsp;TV</h2>
+                        </div>
+
+                        <p id="nenasaTvD" class="" >Launched in 2008 as a satellite television based distance education initiative,
+                            the free-to-air Nenasa TV channels are operated by the Ministry of Education Reform,Open Universities &amp; Distance Learning Promotion in
+                            collaboration with the Dialog Foundation and Dialog television (Pvt.) Ltd</p>
+                        <div class="download-btn centerItem">
+                            <a id="readMore1" href="http://dialogfoundation.org/what-we-do/nenasa-tv/" target="_blank" class="btn google-play-btn mb-2 " >Read More</a>
+                            <br>
+                            <a onclick="setOlSinhalaModalImages()" data-toggle="modal" data-target="#olSinhala" id="timeTamil-ol" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa O/L (Sinhala)</a>
+                            <a onclick="setOlTamilModalImages()" data-toggle="modal" data-target="#olTamil" id="timeSinhala-ol" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa O/L (Tamil)</a>
+                            <a onclick="setAlSinhalaModalImages()" data-toggle="modal" data-target="#alSinhala" id="timeTamil-al" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa A/L (Sinhala)</a>
+                            <a onclick="setAlTamilModalImages()" data-toggle="modal" data-target="#alTamil" id="timeSinhala-al" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa A/L (Tamil)</a>
+                           <a id="timeSinhala-j" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa Junior (Tamil)</a>
+                           <a id="timeTamil-j" href="#" class="btn google-play-btn mb-2 ">Programme Lineup - Nenasa Junior (Sinhala)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--feature section end-->
+
+    <!--download section start-->
+    <section id="nenasa-app" class="download-section pt-100 background-img fadeInUp" style="background: url('images/app-hero-bg.jpg')no-repeat center center / cover" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                    <div class="download-content text-white pb-100 centerItem">
+                        <img src="images/logo.png" class="featureIcon nTvLogo">
+                        <h2 id="app" class="text-white " >Nenasa Educational App</h2>
+                        <p id="appD" class="lead " >
+                            Nenasa is a FREE educational app available on all mainstream operating systems, which
+                            acts as a mobile frontend to the National LCMS e-Thaksalawa as well as an aggregator of
+                            educational and edutainment content from a variety or sources.</p>
+
+                        <div class="download-btn centerItem " >
+                            <a href="https://click.google-analytics.com/redirect?tid=210919215&amp;url=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fnenasa%2Fid1571132656&amp;aid=lk.dialog.nenasa&amp;idfa=%7Baaid%7D&amp;cs=Nenasa.lk&amp;cm=Clickabale+Button&amp;cn=Nenasa.lk+Website+%28iOS+Download+Button%29+-+January+2022&amp;cc=Nenasa.lk+Website+%28iOS+Download+Button%29+-+January+2022" target="_blank">
+                                <img src="images/app-store.png" class="img-fluid m-2" alt="dialog"></a>
+                            <a href="https://play.google.com/store/apps/details?id=lk.dialog.nenasa&amp;referrer=utm_source%3Daarki%26utm_medium%3DClickabale%2BButton%26utm_content%3DNenasa.lk%2BWebsite%2B%2528Android%2BMobile%2BDownload%2BButton%2529%2B-%2BJanuary%2B2022%26utm_campaign%3DNenasa.lk%2BWebsite%2B%2528Android%2BMobile%2BDownload%2BButton%2529%2B-%2BJanuary%2B2022%26anid%3Daarki%26aclid%3D{click_id}%26cp1%3D{app_id}" target="_blank">
+                                <img src="images/play-store.png" class="img-fluid m-2" alt="dialog"></a>
+                        </div>
+
+                        <div class="download-btn centerItem " >
+                           <a href="https://appgallery.huawei.com/#/app/C104415237" target="_blank">
+                                <img src="images/appGallery.png" class="img-fluid m-2" alt="dialog foundation"></a>
+                            <a href="https://www.microsoft.com/en-us/p/nenasa/9mt9l9ds4304?cid=DialogWebsiteButtonAugust2021" target="_blank">
+                                <img src="images/windows.png" class="img-fluid m-2" alt="dialog foundation"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="download-img d-flex align-items-end " >
+                        <img src="images/nenasaB.png" alt="download" class="img-fluid" style="margin-top: -50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--download section end-->
+
+    <div class="overflow-hidden ">
+        <!--feature section start-->
+        <section id="nenasa-1916" class="feature-section ptb-100 fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-4">
+                        <div class="download-img centerItem " >
+                            <img src="images/1377.png" alt="download" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="feature-contents section-heading centerItem " >
+                            <img src="images/n1377.png" class="featureIcon nTvLogo">
+                            <h2 id="n1377" class=" centerItem">Nenasa 1916</h2>
+                            <p id="n1377D">The Nenasa 1916 service is operated by the State Ministry of Education Reforms,
+                                Open Universities and Distance Learning Promotion in collaboration with Dialog Axiata to
+                                provide O/L and A/L students with a helpline to connect with teachers to get their queries
+                                resolved by dialling 1916 from any telephone network at no cost. </p>
+                            <div class="download-btn centerItem">
+                                <a id="readMore2" href="http://dialogfoundation.org/stories/dialog-empowers-students-with-nenasa-1377-education-helpline-amidst-covid-19-outbreak" class="btn google-play-btn mb-2" target="_blank">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--feature section end-->
+    </div>
+    <!--feature section start-->
+    <section id="nenasa-smart" class="feature-section background-shape-right ptb-100 feature3 fadeInUp" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                    <div class="feature-contents section-heading centerItem " >
+                        <img src="images/nSmart.png" class="featureIcon nTvLogo">
+                        <h2 id="nSmart" class=" centerItem">Nenasa Smart School</h2>
+                        <p id="nSmartD">The Nenasa Smart School initiative spearheaded by the Dialog Foundation aspires to
+                            transform Sri Lanka’s education ecosystem by upskilling teachers to be more digital-savvy. </p>
+                        <div class="download-btn centerItem">
+                            <a id="readMore3" href="http://dialogfoundation.org/what-we-do/nenasa-smart-schools" class="btn google-play-btn mb-2" target="_blank">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class="centerItem " >
+                        <iframe class="gurugedaraIframe" src="https://www.youtube.com/embed/0BkDpDBwCEs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--feature section end-->
+
+    <!--modal section start-->
+    <div id="olTamil" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="alTamil" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="alSinhala" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--modal section end-->
+</div>
+<!--body content wrap end-->
+
+<!--shape image start-->
+<div class="shape-img subscribe-wrap mt-120">
+    <img src="images/footer-top-shape.png" alt="footer shape" class="img-fluid">
+</div>
+<!--shape image end-->
+
+<!--footer section start-->
+<footer class="footer-section">
+
+    <!--footer top start-->
+    <div class="footer-top pt-150 background-img-2" style="background: url('images/footer-bg.png')no-repeat center top / cover">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
+                    <div class="footer-nav-wrap text-white centerItem">
+                        <img src="images/logo.png" alt="footer logo" width="70" class="img-fluid mb-3">
+                        <p id="footerTitle">Sri Lanka's Premier Free Distance Education Ecosystem</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 mb-6 mb-sm-6 mb-md-0 mb-lg-0">
+                            <div class="footer-nav-wrap text-white">
+                                <h5 id="footerLinkTitle" class="mb-3 text-white">Initiatives</h5>
+                                <ul class="list-unstyled">
+<!--                                    <li class="mb-2"><a href="#guruGedara">Guru Gedara</a></li>-->
+                                    <li class="mb-2"><a id="nenasaTv2" href="#nenasa-Tv">Nenasa </a><a href="#nenasa-Tv"> TV</a></li>
+                                    <li class="mb-2"><a id="app2" href="#nenasa-app">Nenasa App</a></li>
+<!--                                    <li class="mb-2"><a href="#nenasa-1916">Nenasa 1916</a></li>-->
+                                    <li class="mb-2"><a id="nSmart2" href="#nenasa-smart">Nenasa Smart School</a></li>
+                                </ul>
+                                <div class="mt-3">
+                                    <ul class="list-unstyled d-flex">
+                                    <li class="mr-3"><a href="#"><span class="ti-facebook"></span></a></li>
+                                    <li class="mr-3"><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    <li class="mr-3"><a href="#"><span class="ti-youtube"></span></a></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h5 id="toConnect" class="mb-3 text-white">Contact</h5>
+                                <ul class="list-unstyled support-list">
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-location-pin mr-2"></span>
+                                        <div class="d-flex flex-column">
+                                            <a id="df" href="">Dialog Foundation </a>
+                                            <a id="address" href="">No 475, Union place, Colombo 00200</a>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-mobile mr-2"></span> <a href="tel:+61283766284"> (+94) 777 678 700</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-email mr-2"></span><a href="mailto:sustainability@dialog.lk"> sustainability@dialog.lk</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer bottom copyright start-->
+        <div class="footer-bottom border-gray-light mt-5 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <div class="copyright-wrap small-text">
+                            <p class="mb-0 text-white textLeft">© Dialog Axiata PLC. All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="terms-policy-wrap text-lg-right text-md-right text-left">
+                            <p class="mb-0 text-white textLeft"> Developed by
+                                <a class="text-white " href="https://ceyentra.com" target="_blank">Ceyentra Technologies (Pvt) Ltd.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer bottom copyright end-->
+    </div>
+    <!--footer top end-->
+</footer>
+<!--footer section end-->
+
+<!--jQuery-->
+<script src="js/jquery-3.5.0.min.js"></script>
+<!--Popper js-->
+<script src="js/popper.min.js"></script>
+<!--Bootstrap js-->
+<script src="js/bootstrap.min.js"></script>
+<!--Magnific popup js-->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!--jquery easing js-->
+<script src="js/jquery.easing.min.js"></script>
+
+<!--wow js-->
+<script src="js/wow.min.js"></script>
+<!--owl carousel js-->
+<script src="js/owl.carousel.min.js"></script>
+<!--countdown js-->
+<script src="js/jquery.countdown.min.js"></script>
+<!--validator js-->
+<script src="js/validator.min.js"></script>
+<!--custom js-->
+<script src="js/scripts.js"></script>
+<script src="js/calender.js"></script>
+<script src="js/aos.js"></script>
+
+
+</body></html>
