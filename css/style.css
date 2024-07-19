@@ -59,6 +59,20 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+:root
+{
+	--green: #e95454;
+	--black: #130f40;
+	--lighting-color: #666;
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0.1);
+	--border: .1rem solid rgba(0,0,0.1);
+	--outline: .1rem solid rgba(0,0,0.1);
+}
+
+
+*{
+    box-sizing: border-box
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -68,6 +82,66 @@ body {
     overflow-x: hidden;
     line-height: 1;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #bd2130;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #9bcbff;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #f5ff9a;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 ol, ul {
     list-style: none;
@@ -1694,6 +1768,59 @@ span.sub-title{
     background-size: cover;
 }
 
+/*Course*/
+
+.course .heading
+{
+    text-align: center;
+}
+
+.course .box-container
+{
+	border: 0px solid;
+	display: grid;
+	grid-template-columns: 	repeat(auto-fit, minmax(26rem, 1fr));
+	gap: 1.5rem;	
+}
+
+.course .box-container .box
+{
+	padding: 3rem 0;
+	background: #fff;
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+	outline: var(--outline);
+	outline-offset: -1rem;
+	text-align: center;
+}
+
+.course .box-container .box:hover
+{
+	box-shadow: 1px 2px 10px 4px var(--green);
+}
+
+.course .box-container .box img
+{
+	margin: 1rem 0;
+	height: 15rem;
+}
+
+.course .box-container .box h3
+{
+	font-size: 2rem;
+	color: var(--black);
+	line-height: 1.8;
+}
+
+
+.course .box-container .box p
+{
+	font-size: 1.7rem;
+	color: var(--light-color);
+	line-height: 1.8;
+	padding: 1rem 0;
+}
+/*Course*/
 
 
 /*=========================================
