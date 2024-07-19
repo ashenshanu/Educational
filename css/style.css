@@ -61,7 +61,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 :root
 {
-	--green: #e95454;
+	--red: #e95454;
 	--black: #130f40;
 	--lighting-color: #666;
 	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0.1);
@@ -71,8 +71,29 @@ time, mark, audio, video {
 
 
 *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
     box-sizing: border-box
 }
+
+.btn {
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -174,6 +195,8 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+
 
 body {
     background-color: #ffffff;
@@ -1780,7 +1803,8 @@ span.sub-title{
 	border: 0px solid;
 	display: grid;
 	grid-template-columns: 	repeat(auto-fit, minmax(26rem, 1fr));
-	gap: 1.5rem;	
+	gap: 1.5rem;
+    padding: 3rem;
 }
 
 .course .box-container .box
@@ -1796,7 +1820,12 @@ span.sub-title{
 
 .course .box-container .box:hover
 {
-	box-shadow: 1px 2px 10px 4px var(--green);
+	box-shadow: 1px 2px 10px 4px var(--red);
+}
+
+.course .box-container .box .btn:hover
+{
+	box-shadow: 1px 2px 10px 4px var(--red);
 }
 
 .course .box-container .box img
